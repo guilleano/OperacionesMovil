@@ -20,7 +20,8 @@
         android:layout_height="495dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="45dp">
+        tools:layout_editor_absoluteY="45dp"
+        android:weightSum="1">
 
         <EditText
             android:id="@+id/txtnumerouno"
@@ -39,35 +40,39 @@
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/lblresultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/resultado" />
 
-        <EditText
-            android:id="@+id/lblresultado"
+        <Spinner
+            android:id="@+id/cmbOperaciones"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/btncalcular"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="calcular"
-            android:text="@string/calcular" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnborrar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="borrar"
-            android:text="@string/borrar" />
+            <Button
+                android:id="@+id/btnborrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="borrar"
+                android:text="@string/borrar" />
+
+            <Button
+                android:id="@+id/btncalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="calcular"
+                android:text="@string/calcular" />
+        </LinearLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

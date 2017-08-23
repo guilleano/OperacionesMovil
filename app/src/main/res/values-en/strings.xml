@@ -3,10 +3,15 @@
     <string name="app_name">Operaciones</string>
     <string name="borrar">clear</string>
     <string name="calcular">operator</string>
-    <string name="primer_numero">firts number</string>
+    <string name="primer_numero">Firts number</string>
     <string name="resultado">result</string>
     <string name="segundo_numero">second number</string>
     <string name="titulo">tittle</string>
     <string name="msm_error_uno">Type number one</string>
     <string name="msm_error_dos">Type number two</string>
+    <string name="operaciones">Options</string>
+    <string name="suma">Add</string>
+    <string name="resta">Sustract</string>
+    <string name="multiplicacion">Multiplication</string>
+    <string name="division">division</string>
 </resources>
